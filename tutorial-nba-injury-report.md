@@ -1,4 +1,5 @@
 ---
+image: /assets/nba-injury-report-og.jpg
 title: Build an NBA injury report by team in Python
 description: A short Python script that prints the current NBA injury report grouped by team, with player, position, status and expected return date, using the Basketball API on RapidAPI.
 ---

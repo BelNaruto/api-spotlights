@@ -1,4 +1,5 @@
 ---
+image: /assets/aliexpress-bestsellers-og.jpg
 title: Find AliExpress bestsellers for any keyword in Python
 description: A short Python script that searches AliExpress and ranks the results by units sold and rating, using the AliExpress Data API on RapidAPI.
 ---

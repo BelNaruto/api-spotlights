@@ -1,4 +1,5 @@
 ---
+image: /assets/wnba-standings-og.jpg
 title: Build a WNBA standings table with scoring margins in Python
 description: A short Python script that ranks WNBA teams by win percentage and shows points for, points against and scoring margin, using the WNBA API on RapidAPI.
 ---

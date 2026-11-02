@@ -1,4 +1,5 @@
 ---
+image: /assets/mlb-pythagorean-standings-og.jpg
 title: Find lucky and unlucky MLB teams with Pythagorean standings in Python
 description: A short Python script that compares MLB win totals with the wins their runs scored and allowed predict, using the MLB API on RapidAPI.
 ---

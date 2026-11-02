@@ -1,4 +1,5 @@
 ---
+image: /assets/premier-league-table-og.jpg
 title: Build a Premier League table with European and relegation zones in Python
 description: A short Python script that prints the Premier League table with points per game and qualification and relegation zones, using the English Premier League API on RapidAPI.
 ---

@@ -1,4 +1,5 @@
 ---
+image: /assets/vinted-deal-finder-og.jpg
 title: Build a Vinted deal finder in Python
 description: A short Python script that lists the cheapest Vinted listings for any search under your budget, with brand, size and favourites, using the Vinted API on RapidAPI.
 ---
