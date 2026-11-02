@@ -21,7 +21,7 @@ export RAPIDAPI_KEY=your_key
 
 ## 2. The endpoint
 
-The dividends endpoint (`/v2/stocks/dividends`) takes `symbol` and `country`. **Always send `country`** (a 2-letter code such as US, DE or PT): the same ticker can exist in several countries and the API returns a 400 error when it cannot tell which one you mean. The list of valid codes is at `/v2/reference/countries`. The response has `data.summary` (annualized payout, yield, five year growth) and `data.history` with `ex_date`, `payment_date`, `amount` and `frequency`.
+The dividends endpoint (`/v2/stocks/dividends`) takes `symbol` and `country`. **Always send `country`** (a 2-letter code such as US, DE or PT): the same ticker can exist in several countries. In our live tests the stock quote endpoint (`/v2/stocks`) returned a 400 error for AAPL without `country`, because that symbol exists in 5 countries. The list of valid codes is at `/v2/reference/countries`. The response has `data.summary` (annualized payout, yield, five year growth) and `data.history` with `ex_date`, `payment_date`, `amount` and `frequency`.
 
 ## 3. The script
 
@@ -103,7 +103,7 @@ The complete script is in [examples/dividend_history.py](https://github.com/BelN
 
 ## Tips
 
-- Change the second argument to look up the same company in another country, for example `python dividend_history.py SAP DE`.
+- Change the second argument to a code from `/v2/reference/countries` to look up a company listed in another country.
 - Loop over a watchlist and sort by yield.
 - `next_dividend_date` is empty when no payment is announced yet.
 

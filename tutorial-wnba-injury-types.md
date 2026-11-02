@@ -21,7 +21,7 @@ export RAPIDAPI_KEY=your_key
 
 ## 2. The endpoint
 
-The injuries endpoint (`/injuries`) needs no parameters. It returns `injuries`, a list with one item per player. Each item has the player and team, a `status`, and `details.type` with the injury type (Knee, Foot, Ankle...) and the expected return date.
+The injuries endpoint (`/injuries`) needs no parameters. It returns `injuries`, a list with one entry per team. Each entry has the team `displayName` and its own list of `injuries`. Each injury has the player, a `status`, and `details.type` with the injury type (Knee, Foot, Ankle...) and the expected return date.
 
 ## 3. The script
 
