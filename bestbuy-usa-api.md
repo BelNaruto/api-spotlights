@@ -1,6 +1,7 @@
 ---
 title: BestBuy USA API
 description: BestBuy.com product search, pricing, reviews and recommendations
+image: /assets/bestbuy-usa-api-og.jpg
 ---
 
 ![BestBuy USA API](assets/bestbuy-usa-api.png)
