@@ -1,6 +1,7 @@
 ---
 title: Similar Web API
 description: Website traffic and competitive intelligence data for any domain
+image: /assets/similar-web-api-og.jpg
 ---
 
 ![Similar Web API](assets/similar-web-api.png)
