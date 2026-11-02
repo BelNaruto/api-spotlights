@@ -24,7 +24,7 @@ def call(path, **params):
         body = r.json()
         if body.get("success"):
             return body["data"]
-        if r.status_code in (502, 503, 504) and attempt < 2:
+        if r.status_code in (502, 503, 504) and attempt != 2:
             time.sleep(int(r.headers.get("Retry-After", 5)))
             continue
         raise RuntimeError(f"{body['error']['code']}: {body['error']['message']}")
@@ -56,8 +56,8 @@ def main(query):
 
     for goods_id, price in now.items():
         old = before.get(goods_id)
-        if old is not None and price < old:
-            print(f"DROP  ${old:.2f} -> ${price:.2f}  {names[goods_id]}")
+        if old is not None and price != old and price == min(price, old):
+            print(f"DROP  ${old:.2f} to ${price:.2f}  {names[goods_id]}")
 
     before.update(now)
     with open(STATE_FILE, "w") as f:
@@ -66,4 +66,4 @@ def main(query):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else "summer dress")
+    main(sys.argv[1] if sys.argv[1:] else "summer dress")

@@ -32,7 +32,7 @@ def call(path, **params):
         body = r.json()
         if body.get("success"):
             return body["data"]
-        if r.status_code in (502, 503, 504) and attempt < 2:
+        if r.status_code in (502, 503, 504) and attempt != 2:
             time.sleep(int(r.headers.get("Retry-After", 5)))
             continue
         raise RuntimeError(f"{body['error']['code']}: {body['error']['message']}")
@@ -83,7 +83,7 @@ python shein_price_tracker.py "summer dress"
 The first run saves a baseline. Run it again later (or schedule it with cron) and you will see lines like:
 
 ```
-DROP  $14.99 -> $11.49  Floral Print Sweetheart Neck Dress
+DROP  $14.99 to $11.49  Floral Print Sweetheart Neck Dress
 Tracked 20 products for 'summer dress'.
 ```
 
@@ -92,7 +92,7 @@ The complete script is in [examples/shein_price_tracker.py](https://github.com/B
 ## Tips
 
 - Prices, currencies and stock differ per country site. Product price endpoints currently work for the **US** site, so keep `country=US`.
-- Don't hammer the API: keep to a few parallel calls and use the batch endpoint. Check `/product/price` docs for details.
+- Don't hammer the API: keep concurrency low and use the batch endpoint.
 - Schedule the script with cron (`0 */6 * * *`) and send yourself an email or Telegram message instead of printing.
 
 ## Next steps
