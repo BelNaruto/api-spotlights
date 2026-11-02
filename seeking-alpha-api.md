@@ -1,6 +1,7 @@
 ---
 title: Seeking Alpha API (Unofficial)
 description: Quotes, estimates, ratings, news and analysis as JSON
+image: /assets/seeking-alpha-api-og.jpg
 ---
 
 ![Seeking Alpha API (Unofficial)](assets/seeking-alpha-api.png)
@@ -15,7 +16,7 @@ Real-time quotes, price history, company profiles, earnings estimates, dividends
 
 ## What you get
 
-- Real-time quotes for up to 50 symbols per call
+- Real-time quotes for any listed stock
 - Charts and daily historical prices
 - Company profile, estimates, dividends, splits
 - Analyst ratings and sector ranking
@@ -38,7 +39,7 @@ Real-time quotes, price history, company profiles, earnings estimates, dividends
 
 ```bash
 curl --request GET \
-  --url 'https://seeking-alpha-api.p.rapidapi.com/price?symbols=AAPL,MSFT' \
+  --url 'https://seeking-alpha-api.p.rapidapi.com/price?sa_id=146' \
   --header 'X-RapidAPI-Key: YOUR_RAPIDAPI_KEY' \
   --header 'X-RapidAPI-Host: seeking-alpha-api.p.rapidapi.com'
 ```
