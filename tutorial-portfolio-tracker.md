@@ -1,6 +1,7 @@
 ---
 title: Build a live stock portfolio tracker in Python
 description: A short Python script that turns a list of holdings into a live portfolio value with weights, using the YH Finance Complete API on RapidAPI.
+image: /assets/portfolio-tracker-og.jpg
 ---
 
 # Build a live stock portfolio tracker in Python

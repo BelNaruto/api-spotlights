@@ -1,6 +1,7 @@
 ---
 title: Build an NHL standings table in Python
 description: A short Python script that prints the NHL standings with points percentage and goal differential, using the NHL API on RapidAPI.
+image: /assets/nhl-standings-og.jpg
 ---
 
 # Build an NHL standings table in Python

@@ -1,6 +1,7 @@
 ---
 title: Tear down a competitor Shopify store in Python
 description: A short Python script that profiles any Shopify store (theme, catalogue size, price range, discounts) using the Shopify Stores Info API on RapidAPI.
+image: /assets/shopify-store-teardown-og.jpg
 ---
 
 # Tear down a competitor Shopify store in Python

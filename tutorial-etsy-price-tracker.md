@@ -1,6 +1,7 @@
 ---
 title: Build an Etsy price and favorites tracker in Python
 description: A short Python script that tracks Etsy listing prices and favorites and flags price drops, using the Etsy API on RapidAPI.
+image: /assets/etsy-price-tracker-og.jpg
 ---
 
 # Build an Etsy price and favorites tracker in Python

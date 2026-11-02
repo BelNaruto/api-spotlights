@@ -1,6 +1,7 @@
 ---
 title: Build an F1 championship table with points gaps in Python
 description: A short Python script that prints the Formula 1 drivers championship with the gap to the leader and each driver's best race, using the F1 Motorsport Data API on RapidAPI.
+image: /assets/f1-standings-og.jpg
 ---
 
 # Build an F1 championship table with points gaps in Python
