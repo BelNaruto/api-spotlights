@@ -80,12 +80,14 @@ if __name__ == "__main__":
 python aliexpress_bestsellers.py "phone case"
 ```
 
-You get the bestsellers first (illustrative output):
+You get the bestsellers first (real output, titles shortened):
 
 ```
- 10000 sold  4.9 stars  Example phone case title
+ 60000 sold  4.9 stars  Magnetic Original Clear
         https://www.aliexpress.com/item/...
-  1000 sold  4.8 stars  Another phone case
+  1000 sold  4.7 stars  Phone Case 1:1 Original
+        https://www.aliexpress.com/item/...
+   548 sold  4.6 stars  Phone Case Magnetic Kick
         https://www.aliexpress.com/item/...
 ```
 

@@ -76,13 +76,14 @@ if __name__ == "__main__":
 python nba_injury_report.py lakers celtics
 ```
 
-You get the report team by team (illustrative output):
+You get the report team by team (an excerpt of the real output):
 
 ```
-99 players on the injury report across 30 teams
+101 players on the injury report across 29 teams
 
 Atlanta Hawks (5)
-  Example Player           G   Suspension   back: 2026-11-04
+  Kingston Flemings        G   Suspension   back: 2026-11-04
+  Jalen Johnson            F   Day-To-Day   back: 2026-11-02
 ```
 
 The complete script is in [examples/nba_injury_report.py](https://github.com/BelNaruto/api-spotlights/blob/main/examples/nba_injury_report.py).

@@ -85,12 +85,13 @@ if __name__ == "__main__":
 python premier_league_table.py 2025
 ```
 
-You get the full 20-club table (illustrative layout):
+You get the full 20-club table (the first rows of the real 2025 output):
 
 ```
  #  Team                      P  W-D-L     GD  PTS  PPG   Zone
  1  Arsenal                  38  26-7-5   +44   85  2.24  CHAMPION
- 2  Man City                 38  25-8-5   +35   83  2.18  Champions League
+ 2  Manchester City          38  23-9-6   +42   78  2.05  Champions League
+ 3  Manchester United        38  20-11-7  +19   71  1.87  Champions League
 ```
 
 The complete script is in [examples/premier_league_table.py](https://github.com/BelNaruto/api-spotlights/blob/main/examples/premier_league_table.py).

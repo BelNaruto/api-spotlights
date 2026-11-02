@@ -78,12 +78,12 @@ if __name__ == "__main__":
 python vinted_deal_finder.py "nike hoodie" 20 us
 ```
 
-You get the cheapest listings under your budget (illustrative output):
+You get the cheapest listings under your budget (real output):
 
 ```
-   5.50 USD    3 favs  Nike           M      Nike hoodie grey
+   1.75 USD    1 favs  Nike           S      Nike Hoodie
         link
-  12.00 USD   10 favs  Nike           M      Zip hoodie
+   1.75 USD    2 favs  Nike           3T/3   Nike hoodie
         link
 ```
 
@@ -91,6 +91,7 @@ The complete script is in [examples/vinted_deal_finder.py](https://github.com/Be
 
 ## Tips
 
+- Sorted by price, the first results start at Vinted's minimum price, so try a higher budget with `orderBy` set to `relevance` if you want more useful deals.
 - Switch `order` to `newest_first` and run the script on a schedule to be the first to see new listings.
 - Many favourites on a cheap listing usually means it will sell fast.
 - The API also has brand search, catalog search, search filters, suggestions and a homepage feed you can add next.

@@ -79,18 +79,20 @@ if __name__ == "__main__":
 python mlb_pythagorean.py 2025
 ```
 
-You get one line per team, best record first (illustrative numbers):
+You get one line per team, best record first (the first rows of the real 2025 output):
 
 ```
 Team                    W-L      RS    RA    RUN DIFF  WINS VS EXPECTED
 New York Yankees        94-68    849   685   +164      -2.7
-Chicago Cubs            92-70    780   690   +90       +2.0
+Chicago Cubs            92-70    793   649   +144      -3.7
+San Diego Padres        90-72    702   621   +81       -0.0
 ```
 
 The complete script is in [examples/mlb_pythagorean.py](https://github.com/BelNaruto/api-spotlights/blob/main/examples/mlb_pythagorean.py).
 
 ## Tips
 
+- At the time of writing the API returns 24 of the 30 teams for 2025, so some clubs are missing from the table.
 - A positive last column means the team won more games than its run totals suggest. Those teams often regress the next season.
 - The endpoint also takes an optional `group` parameter if you want a different grouping.
 - The API also has scoreboards, box scores, play by play, schedules, injuries, team rosters and news you can add next.

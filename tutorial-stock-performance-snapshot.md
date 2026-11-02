@@ -70,11 +70,11 @@ if __name__ == "__main__":
 python stock_snapshot.py AAPL MSFT NVDA
 ```
 
-You get one line per stock (illustrative numbers):
+You get one line per stock (real output):
 
 ```
 SYMBOL      PRICE      1D      1M     YTD      1Y  FROM 52W HIGH
-AAPL       337.16   -2.2%   +1.1%  +23.8%  +24.7%  -4.1%  Apple Inc
+AAPL       336.66   -2.3%   +1.0%  +23.7%  +24.6%  -4.3%  Apple Inc
 ```
 
 The complete script is in [examples/stock_snapshot.py](https://github.com/BelNaruto/api-spotlights/blob/main/examples/stock_snapshot.py).

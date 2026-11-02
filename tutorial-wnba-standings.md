@@ -73,12 +73,13 @@ if __name__ == "__main__":
 python wnba_standings.py 2025
 ```
 
-You get one line per team, best record first (illustrative numbers):
+You get one line per team, best record first (the first rows of the real 2025 output):
 
 ```
 Team                    W-L     WIN%   PF     PA     MARGIN
 Minnesota Lynx          34-10   0.773  86.1   76.7   +9.4
-Las Vegas Aces          30-14   0.680  84.0   79.5   +4.5
+Las Vegas Aces          30-14   0.682  83.6   80.7   +2.9
+Atlanta Dream           30-14   0.682  84.4   76.8   +7.6
 ```
 
 The complete script is in [examples/wnba_standings.py](https://github.com/BelNaruto/api-spotlights/blob/main/examples/wnba_standings.py).
