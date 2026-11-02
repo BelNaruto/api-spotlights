@@ -1,4 +1,5 @@
 ---
+image: /assets/stock-performance-snapshot-og.jpg
 title: Build a stock performance snapshot in Python
 description: A short Python script that prints price, 1-day, 1-month, year-to-date and 1-year performance and distance from the 52-week high for a list of stocks, using the Investing.com Ultimate API on RapidAPI.
 ---
