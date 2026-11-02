@@ -70,8 +70,8 @@ Prices are saved to `prices.json`. On each run, anything cheaper than before is 
 ```python
 for goods_id, price in now.items():
     old = before.get(goods_id)
-    if old is not None and price < old:
-        print(f"DROP  ${old:.2f} -> ${price:.2f}  {names[goods_id]}")
+    if old is not None and price != old and price == min(price, old):
+        print(f"DROP  ${old:.2f} to ${price:.2f}  {names[goods_id]}")
 ```
 
 ## 6. Run it
