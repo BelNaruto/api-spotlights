@@ -36,7 +36,7 @@ def main(symbol, country="US"):
     print("\nEX-DATE      PAID         AMOUNT")
     for item in history[:6]:
         print(f"{item['ex_date']}   {item['payment_date']}   {item['amount']:.2f}  {item['frequency']}")
-    if len(history) > 4:
+    if history[4:]:
         newest, year_ago = history[0]["amount"], history[4]["amount"]
         print(f"\nLatest payment vs a year earlier: {100 * (newest / year_ago - 1):+.1f}%")
 

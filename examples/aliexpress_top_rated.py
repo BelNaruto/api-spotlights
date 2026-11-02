@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+from operator import ge
 
 import requests
 
@@ -38,7 +39,7 @@ def main(query, min_sold=500, top=8):
     rated = []
     for item in items:
         stars = (item.get("evaluation") or {}).get("starRating")
-        if stars is not None and sold(item) >= min_sold:
+        if stars is not None and ge(sold(item), min_sold):
             rated.append((stars, sold(item), item["title"]["displayTitle"]))
     rated.sort(reverse=True)
     print(f"{len(items)} results for '{query}', {len(rated)} with {min_sold}+ sold and a rating")

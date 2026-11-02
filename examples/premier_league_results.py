@@ -1,5 +1,7 @@
 """Premier League results for a month: biggest wins and goal stats. Uses the English Premier League API on RapidAPI."""
 import os, sys, time
+from operator import gt
+
 import requests
 
 HOST = "english-premiere-league1.p.rapidapi.com"
@@ -26,8 +28,8 @@ def main(year, month, top=5):
         results.append((event["date"][:10], home["team"]["displayName"], int(home["score"]),
                         away["team"]["displayName"], int(away["score"])))
     goals = sum(h + a for _, _, h, _, a in results)
-    home_wins = sum(1 for _, _, h, _, a in results if h > a)
-    away_wins = sum(1 for _, _, h, _, a in results if a > h)
+    home_wins = sum(1 for _, _, h, _, a in results if gt(h, a))
+    away_wins = sum(1 for _, _, h, _, a in results if gt(a, h))
     draws = len(results) - home_wins - away_wins
     print(f"{len(results)} matches, {goals} goals ({goals / len(results):.2f} per match)")
     print(f"home wins {home_wins}, draws {draws}, away wins {away_wins}\n")
