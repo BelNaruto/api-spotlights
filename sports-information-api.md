@@ -1,6 +1,7 @@
 ---
 title: Sports Information API
 description: Scores, stats, standings, odds and predictions for 90+ leagues
+image: /assets/sports-information-api-og.jpg
 ---
 
 ![Sports Information API](assets/sports-information-api.png)

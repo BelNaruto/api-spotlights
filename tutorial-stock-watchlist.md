@@ -97,7 +97,7 @@ if __name__ == "__main__":
 python stock_watchlist.py AAPL MSFT NVDA TSLA
 ```
 
-You get one line per ticker:
+You get one line per ticker, best mover first (illustrative numbers):
 
 ```
 NVDA      190.12   +1.84%  NVIDIA Corporation           (Delayed)
