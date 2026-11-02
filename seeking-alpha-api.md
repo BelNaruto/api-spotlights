@@ -3,7 +3,7 @@ title: Seeking Alpha API (Unofficial)
 description: Quotes, estimates, ratings, news and analysis as JSON
 ---
 
-![Seeking Alpha API (Unofficial)](assets/seeking-alpha-api.svg)
+![Seeking Alpha API (Unofficial)](assets/seeking-alpha-api.png)
 
 # Seeking Alpha API (Unofficial)
 

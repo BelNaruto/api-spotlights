@@ -3,7 +3,7 @@ title: Similar Web API
 description: Website traffic and competitive intelligence data for any domain
 ---
 
-![Similar Web API](assets/similar-web-api.svg)
+![Similar Web API](assets/similar-web-api.png)
 
 # Similar Web API
 

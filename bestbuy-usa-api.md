@@ -3,7 +3,7 @@ title: BestBuy USA API
 description: BestBuy.com product search, pricing, reviews and recommendations
 ---
 
-![BestBuy USA API](assets/bestbuy-usa-api.svg)
+![BestBuy USA API](assets/bestbuy-usa-api.png)
 
 # BestBuy USA API
 
