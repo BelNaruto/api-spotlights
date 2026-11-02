@@ -1,6 +1,7 @@
 ---
 title: Shein Data API
 description: Real-time SHEIN product, price, stock and review data as clean JSON
+image: /assets/shein-data-api-og.jpg
 ---
 
 ![Shein Data API](assets/shein-data-api.png)
