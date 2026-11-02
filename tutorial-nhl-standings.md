@@ -55,13 +55,15 @@ def main(year, top):
         rows.append((pts / (2 * gp), e["team"]["displayName"], gp, s["wins"], s["losses"],
                      s["otLosses"], pts, s["pointDifferential"]))
     rows.sort(reverse=True)
-    print(f"{'#':>2}.  {'Team':<22} {'GP':>2}  W-L-OTL".ljust(40) + " PTS  PTS%   GD")
+    print(" #.  " + "Team".ljust(22) + " GP  " + "W-L-OTL".ljust(8) + " PTS  PTS%   GD")
     for i, (pct, team, gp, w, l, otl, pts, gd) in enumerate(rows[:top], 1):
-        print(f"{i:>2}.  {team:<22} {gp:>2.0f}  {w:.0f}-{l:.0f}-{otl:.0f}".ljust(40) + f"{pts:>4.0f}  {pct:5.3f}  {gd:+.0f}")
+        record = f"{w:.0f}-{l:.0f}-{otl:.0f}"
+        print(f"{i:2}.  " + team.ljust(22) + f" {gp:2.0f}  " + record.ljust(8) + f"{pts:4.0f}  {pct:5.3f}  {gd:+.0f}")
 
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else "2025", int(sys.argv[2]) if len(sys.argv) > 2 else 10)
+    args = sys.argv[1:] + ["2025", "10"][len(sys.argv) - 1:]
+    main(args[0], int(args[1]))
 ```
 
 ## 4. Run it
