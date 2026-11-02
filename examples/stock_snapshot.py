@@ -6,10 +6,10 @@ HOST = "investing-com-ultimate-api.p.rapidapi.com"
 HEADERS = {"X-RapidAPI-Key": os.environ["RAPIDAPI_KEY"], "X-RapidAPI-Host": HOST}
 
 
-def stock(symbol):
+def stock(symbol, country="US"):
     for attempt in range(3):
         r = requests.get(f"https://{HOST}/v2/stocks", headers=HEADERS,
-                         params={"symbol": symbol}, timeout=60)
+                         params={"symbol": symbol, "country": country}, timeout=60)
         if r.ok:
             return r.json()["data"]
         if r.status_code in (500, 502, 503, 504) and attempt != 2:

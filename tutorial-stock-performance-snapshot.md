@@ -21,7 +21,7 @@ export RAPIDAPI_KEY=your_key
 
 ## 2. Get a stock quote
 
-The `/v2/stocks` endpoint takes a `symbol` (and optionally `country`, `currency` and `language`) and returns a `data` object with the name, `price` (`last`, `change`, `high`, `low`), `performance` (`1d`, `1w`, `1m`, `3m`, `6m`, `ytd`, `1y`, `3y`, `5y`), `range_52_weeks` and `fundamentals`. The helper retries temporary server errors.
+The `/v2/stocks` endpoint takes a `symbol` and a `country` (a ticker like AAPL is listed in several countries, and the API answers with a 400 error if you leave `country` out). You can also pass `currency` and `language`. It returns a `data` object with the name, `price` (`last`, `change`, `high`, `low`), `performance` (`1d`, `1w`, `1m`, `3m`, `6m`, `ytd`, `1y`, `3y`, `5y`), `range_52_weeks` and `fundamentals`. The helper retries temporary server errors.
 
 ```python
 import os, sys, time
@@ -31,10 +31,10 @@ HOST = "investing-com-ultimate-api.p.rapidapi.com"
 HEADERS = {"X-RapidAPI-Key": os.environ["RAPIDAPI_KEY"], "X-RapidAPI-Host": HOST}
 
 
-def stock(symbol):
+def stock(symbol, country="US"):
     for attempt in range(3):
         r = requests.get(f"https://{HOST}/v2/stocks", headers=HEADERS,
-                         params={"symbol": symbol}, timeout=60)
+                         params={"symbol": symbol, "country": country}, timeout=60)
         if r.ok:
             return r.json()["data"]
         if r.status_code in (500, 502, 503, 504) and attempt != 2:
@@ -81,7 +81,7 @@ The complete script is in [examples/stock_snapshot.py](https://github.com/BelNar
 
 ## Tips
 
-- Add `country` to the request when a ticker exists on several exchanges.
+- `country` defaults to `US` in the script. Change it (for example `BR`) for stocks listed in another country.
 - Use the `currency` parameter to see every price in your own currency.
 - The API also has historical prices, financial statements, ratios, forecasts, dividends, news, technical summaries, ETFs, funds, currencies, crypto and an economic calendar you can add next.
 
