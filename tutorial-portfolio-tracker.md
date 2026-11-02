@@ -67,14 +67,14 @@ if __name__ == "__main__":
 ## 4. Run it
 
 ```bash
-python portfolio_tracker.py AAPL:10 MSFT:5 NVDA:8
+python portfolio_tracker.py AAPL:10 MSFT:5
 ```
 
 You get one line per position and a total (illustrative numbers):
 
 ```
-AAPL       10.00 x    337.46 USD =     3,374.60   55.8%  Apple
-MSFT        5.00 x    400.00 USD =     2,000.00   33.1%  Microsoft
+AAPL       10.00 x    337.46 USD =     3,374.60   62.8%  Apple
+MSFT        5.00 x    400.00 USD =     2,000.00   37.2%  Microsoft
 TOTAL        5,374.60
 ```
 
