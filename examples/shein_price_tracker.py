@@ -20,7 +20,7 @@ STATE_FILE = "prices.json"
 def call(path, **params):
     """GET an endpoint, retry temporary upstream errors, return the `data` payload."""
     for attempt in range(3):
-        r = requests.get(f"https://{HOST}{path}", headers=HEADERS, params=params, timeout=30)
+        r = requests.get(f"https://{HOST}{path}", headers=HEADERS, params=params, timeout=60)
         body = r.json()
         if body.get("success"):
             return body["data"]
