@@ -1,5 +1,6 @@
 ---
 title: Build a tennis match preview in Python (head-to-head and win probability)
+image: /assets/tennis-match-preview-og.jpg
 description: A short Python script that previews any ATP or WTA matchup with head-to-head, Elo, recent form and a win probability, using the Tennis API on RapidAPI.
 ---
 

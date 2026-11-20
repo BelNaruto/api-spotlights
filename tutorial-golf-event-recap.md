@@ -1,5 +1,6 @@
 ---
 title: PGA Tour season recap and event leaderboard in Python
+image: /assets/golf-event-recap-og.jpg
 description: A short Python script that reads the PGA Tour schedule, finds the multiple winners of the season and prints the leaderboard of the latest event, using the Live Golf Data API on RapidAPI.
 ---
 

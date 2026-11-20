@@ -1,5 +1,6 @@
 ---
 title: Build a PGA Tour money list in Python (earnings, FedExCup points, wins)
+image: /assets/golf-money-list-og.jpg
 description: A short Python script that prints the PGA Tour money list with earnings, FedExCup points, wins and driving distance, using the Live Golf Data API on RapidAPI.
 ---
 

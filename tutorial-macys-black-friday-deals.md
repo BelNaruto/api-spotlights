@@ -1,5 +1,6 @@
 ---
 title: Find the biggest Black Friday savings on Macy's with Python
+image: /assets/macys-black-friday-deals-og.jpg
 description: A Python script that pulls Macy's deal products and ranks them by dollars saved, using the Macy's API on RapidAPI.
 ---
 

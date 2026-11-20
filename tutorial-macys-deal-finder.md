@@ -1,5 +1,6 @@
 ---
 title: Build a Macy's deal finder that ranks search results by discount (Python)
+image: /assets/macys-deal-finder-og.jpg
 description: A Python script that searches Macy's for any product and ranks the results by discount, price and reviews, using the Macy's API on RapidAPI.
 ---
 

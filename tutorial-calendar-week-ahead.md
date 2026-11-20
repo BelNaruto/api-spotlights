@@ -1,5 +1,6 @@
 ---
 title: Build a week-ahead economic calendar of high-impact market events (Python)
+image: /assets/calendar-week-ahead-og.jpg
 description: A short Python script that lists the high-impact economic events for the coming week, grouped by day with forecast and previous values, using the Trader Calendar API on RapidAPI.
 ---
 

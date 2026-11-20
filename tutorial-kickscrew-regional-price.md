@@ -1,5 +1,6 @@
 ---
 title: Find the cheapest country to buy a sneaker with live FX conversion (Python)
+image: /assets/kickscrew-regional-price-og.jpg
 description: A Python script that compares one sneaker's price across 10 country storefronts, converted to USD, using the KicksCrew Sneakers Data API on RapidAPI.
 ---
 

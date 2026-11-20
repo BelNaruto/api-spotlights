@@ -1,5 +1,6 @@
 ---
 title: Build a trending sneakers leaderboard with demand score and sell-out risk (Python)
+image: /assets/kickscrew-trending-sneakers-og.jpg
 description: A short Python script that ranks sneakers in a collection by demand score and sell-out risk, using the KicksCrew Sneakers Data API on RapidAPI.
 ---
 

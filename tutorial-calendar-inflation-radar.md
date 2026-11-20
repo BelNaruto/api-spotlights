@@ -1,5 +1,6 @@
 ---
 title: Build an inflation and central bank radar across countries (Python)
+image: /assets/calendar-inflation-radar-og.jpg
 description: A Python script that tracks inflation releases and central bank events across the US, euro zone, UK and Japan using the Trader Calendar API on RapidAPI.
 ---
 

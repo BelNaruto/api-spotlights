@@ -1,5 +1,6 @@
 ---
 title: Elo ratings vs the ATP ranking in Python (who is really playing best?)
+image: /assets/tennis-elo-vs-ranking-og.jpg
 description: A short Python script that compares the official ATP ranking with surface Elo ratings and lists the biggest ranking movers, using the Tennis API on RapidAPI.
 ---
 
